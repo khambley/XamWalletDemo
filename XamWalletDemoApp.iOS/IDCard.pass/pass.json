@@ -6,24 +6,29 @@
   "webServiceURL" : "https://example.com/passes/",
   "authenticationToken" : "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
   "organizationName" : "Blue Cross Blue Shield",
-  "description" : "BCBS ID Card",
-  "logoText" : "BCBS of AZ",
-  "foregroundColor" : "#FFFFFF",
-  "backgroundColor" : "#000000",
+  "description" : "BCBS-AZ ID Card",
+  "logoText" : "Blue Cross Blue Shield",
+  "foregroundColor" : "#000000",
+  "backgroundColor" : "#FFFFFF",
   "storeCard" : {
     "primaryFields" : [
       {
-        "key" : "balance",
-        "label" : "remaining balance",
-        "value" : 21.75,
-        "currencyCode" : "USD"
+        "key" : "plan",
+        "value" : "Medical"
+      }
+    ],
+    "secondaryFields" : [
+      {
+        "key" : "memberName",
+        "label" : "Member Name",
+        "value" :"Katherine Hambley" 
       }
     ],
     "auxiliaryFields" : [
       {
-        "key" : "deal",
-        "label" : "Deal of the Day",
-        "value" : "Lemons"
+        "key" : "groupNo",
+        "label" : "GroupNo",
+        "value" : "0050"
       }
     ]
   }

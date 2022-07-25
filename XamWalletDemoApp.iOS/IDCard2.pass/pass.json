@@ -1,0 +1,92 @@
+{
+  "formatVersion" : 1,
+  "passTypeIdentifier" : "pass.com.hambleytek.xamwalletdemo",
+  "serialNumber" : "8j23fm3",
+  "webServiceURL" : "https://example.com/passes/",
+  "authenticationToken" : "vxwxd7J8AlNNFPS8k0a0FfUFtq0ewzFdc",
+  "teamIdentifier" : "U5Y279Y73Z",
+  "organizationName" : "Blue Cross Blue Shield",
+  "description" : "BCBS-AZ ID Card",
+  "logoText" : "Blue Cross Blue Shield AZ",
+  "foregroundColor" : "#000000",
+  "backgroundColor" : "#FFFFFF",
+  "generic" : {
+    "primaryFields" : [
+      {
+        "key" : "planName",
+        "label" : "Plan",
+        "value" : "Medical"
+      }
+    ],
+    "secondaryFields" : [
+      {
+        "key" : "memberName",
+        "label" : "Member Name",
+        "value" : "Katherine Hambley"
+      },
+      {
+        "key" : "memberId",
+        "label" : "Member ID",
+        "value" : "012345678900"
+      }
+    ],
+    "auxiliaryFields" : [
+      {
+        "key" : "groupNo",
+        "label" : "Group No.",
+        "value" : "0050",
+        "textAlignment" : "PKTextAlignmentRight"
+      },
+      {
+        "key" : "networkType",
+        "label" : "Network:",
+        "value" : "PPO"
+      },
+      {
+        "key" : "rxBinNo",
+        "label" : "RX Bin #",
+        "value" : "123456"
+      }
+    ],
+    "backFields" : [
+      {
+        "numberStyle" : "PKNumberStyleSpellOut",
+        "label" : "spelled out",
+        "key" : "numberStyle",
+        "value" : 200
+      },
+      {
+        "label" : "in Reals",
+        "key" : "currency",
+        "value" : 200,
+        "currencyCode" : "BRL"
+      },
+      {
+        "dateStyle" : "PKDateStyleFull",
+        "label" : "full date",
+        "key" : "dateFull",
+        "value" : "1980-05-07T10:00-05:00"
+      },
+      {
+        "label" : "full time",
+        "key" : "timeFull",
+        "value" : "1980-05-07T10:00-05:00",
+        "timeStyle" : "PKDateStyleFull"
+      },
+      {
+        "dateStyle" : "PKDateStyleShort",
+        "label" : "short date and time",
+        "key" : "dateTime",
+        "value" : "1980-05-07T10:00-05:00",
+        "timeStyle" : "PKDateStyleShort"
+      },
+      {
+        "dateStyle" : "PKDateStyleShort",
+        "label" : "relative date",
+        "key" : "relStyle",
+        "value" : "2013-04-24T10:00-05:00",
+        "isRelative" : true
+      }
+    ]
+  }
+}
