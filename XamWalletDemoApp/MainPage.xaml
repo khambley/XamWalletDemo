@@ -5,8 +5,13 @@
              xmlns:local="clr-namespace:XamWalletDemoApp.CustomControls;assembly=XamWalletDemoApp"
              Title="Xamarin Add to Wallet Demo">
 
-    <StackLayout>
-        <local:AddToWalletButton  />
-    </StackLayout>
-
+    <!--<StackLayout>
+        <local:AddToWalletButton />
+        <Button x:Name="AddToWalletButton"
+                Text="Add To Wallet"
+                TextColor="AliceBlue"
+                Clicked="AddToWalletButton_Clicked"
+                IsVisible="true"/>
+    </StackLayout>-->
+    <Button Text="Add to Wallet" x:Name="AddPassButton" Clicked="AddPassButton_Clicked" />
 </ContentPage>

@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using PassKit;
 using Xamarin.Forms;
+using XamWalletDemoApp.Services;
 
 namespace XamWalletDemoApp
 {
@@ -14,7 +15,18 @@ namespace XamWalletDemoApp
         public MainPage()
         {
             InitializeComponent();
+
             
+        }
+
+        void AddToWalletButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            DependencyService.Get<IWalletService>().AddPassToWallet();
+        }
+
+        void AddPassButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            DependencyService.Get<IWalletService>().AddPassToWallet();
         }
     }
 }

@@ -71,6 +71,7 @@
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CustomRenderers\AddToWalletButtonRenderer.cs" />
+    <Compile Include="Services\WalletService.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -137,6 +138,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomRenderers\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="IDCard2.pkpass" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

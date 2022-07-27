@@ -17,6 +17,7 @@
   <ItemGroup>
     <None Remove="Xamarin.iOS" />
     <None Remove="CustomControls\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.iOS">
@@ -25,5 +26,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="CustomControls\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
