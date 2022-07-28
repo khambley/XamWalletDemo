@@ -117,6 +117,8 @@
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\Image.imageset\Contents.json" />
+    <ImageAsset Include="Resources\US-UK_Add_to_Apple_Wallet_RGB_101421.svg" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

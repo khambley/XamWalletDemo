@@ -8,6 +8,7 @@ using XamWalletDemoApp.CustomControls;
 using System.IO;
 using Foundation;
 using XamWalletDemoApp.Services;
+using XamWalletDemoApp.iOS.Services;
 
 [assembly: ExportRenderer(typeof(AddToWalletButton), typeof(AddToWalletButtonRenderer))]
 namespace XamWalletDemoApp.iOS.CustomRenderers
@@ -21,8 +22,15 @@ namespace XamWalletDemoApp.iOS.CustomRenderers
             {
                 if (PKAddPassesViewController.CanAddPasses)
                 {
+                    var walletService = new WalletService();
+
                     PKAddPassButton btn = new PKAddPassButton(PKAddPassButtonStyle.Black);
                     btn.Frame = new CoreGraphics.CGRect(50, 200, 300, 44);
+                    btn.TouchUpInside += (sender, e2) =>
+                    {
+                        walletService.AddPassToWallet();
+                    };
+                    Control.Add(btn);
                     //var newBtn = DependencyService.Get<IWalletService>().AddPassToWallet(btn);
                     //Control.AddSubview(newBtn);
                 }

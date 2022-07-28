@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using PassKit;
 using Xamarin.Forms;
 using XamWalletDemoApp.Services;
 
@@ -15,7 +14,7 @@ namespace XamWalletDemoApp
         public MainPage()
         {
             InitializeComponent();
-
+            
             
         }
 
