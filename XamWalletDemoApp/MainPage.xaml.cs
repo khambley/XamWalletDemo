@@ -14,6 +14,12 @@ namespace XamWalletDemoApp
         public MainPage()
         {
             InitializeComponent();
+            switch(Device.RuntimePlatform)
+            {
+                case Device.iOS:
+                    AddToWalletButton_iOS.IsVisible = true;
+                    break;
+            }
             
             
         }

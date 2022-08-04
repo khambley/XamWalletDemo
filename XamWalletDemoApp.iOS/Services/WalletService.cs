@@ -12,7 +12,6 @@ namespace XamWalletDemoApp.iOS.Services
 {
     public class WalletService : UIViewController, IWalletService
     {
-        
         public void AddPassToWallet()
         {
             //new UIAlertView("Wallet Service", "You clicked the Add to Wallet Button", null, "OK", null).Show();

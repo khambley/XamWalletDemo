@@ -5,17 +5,25 @@
              xmlns:local="clr-namespace:XamWalletDemoApp.CustomControls;assembly=XamWalletDemoApp"
              Title="Xamarin Add to Wallet Demo">
 
-    <StackLayout>
-        <local:AddToWalletButton />
-        <!--<Button x:Name="AddToWalletButton"
-                Text="Add To Wallet"
-                TextColor="AliceBlue"
-                IsVisible="true"/>-->
+    <StackLayout VerticalOptions="CenterAndExpand">
+
+        <!--<local:AddToWalletButton />-->
+        <!--<Label Text="Add to Wallet" />-->
+        <Button x:Name="AddToWalletButton_iOS"
+                Text="Add To Apple Wallet"
+                TextColor="White"
+                BackgroundColor="Black"
+                IsVisible="false"
+                FontSize="Large"
+                VerticalOptions="EndAndExpand"
+                Margin="20,0,20,0"
+                Clicked="AddToWalletButton_Clicked" />
+
     </StackLayout>
     <!--<Button Text="Add to Apple Wallet"
             x:Name="AddPassButton"
             Clicked="AddPassButton_Clicked"
-            />-->
+            />--><!---->
 
     <!--<ImageButton Source="US-UK_Add_to_Apple_Wallet_RGB_101421.svg"
                  HorizontalOptions="StartAndExpand"

@@ -26,11 +26,11 @@ namespace XamWalletDemoApp.iOS.CustomRenderers
 
                     PKAddPassButton btn = new PKAddPassButton(PKAddPassButtonStyle.Black);
                     btn.Frame = new CoreGraphics.CGRect(50, 200, 300, 44);
+                    Control.Add(btn);
                     btn.TouchUpInside += (sender, e2) =>
                     {
                         walletService.AddPassToWallet();
                     };
-                    Control.Add(btn);
                     //var newBtn = DependencyService.Get<IWalletService>().AddPassToWallet(btn);
                     //Control.AddSubview(newBtn);
                 }
